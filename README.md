@@ -14,7 +14,7 @@ Jeg skal lage en enkel Flask-applikasjon.
 
 - Tenke på brukervennlighet og universell utforming
 
-# Hva jeg har gjort
+# Hva jeg har gjort 
 
 - Navigert i mapper med cd (drift)
 
