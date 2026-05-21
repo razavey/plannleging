@@ -73,6 +73,25 @@ Betyr ofte at man er i feil mappe.
 
 Bruk: ls for å se filene i mappen
 
+8. Installere MariaDB-pakker i Linux/WSL
+
+Hvis man får feil som:
+
+OSError: mariadb_config not found
+
+må man installere MariaDB development-pakker.
+
+Kjør:
+
+sudo apt update
+
+sudo apt install libmariadb-dev
+
+Deretter kan man installere Python-pakken:
+
+pip install mariadb
+ 
+
 
 Oppsummering
 I denne brukerveiledningen lærte vi:
@@ -82,4 +101,33 @@ hvordan lage virtual environment
 hvordan installere Python-pakker
 hvordan starte Python-programmer
 hvordan feilsøke vanlige problemer
+
+
+<img width="1156" height="299" alt="Skjermbilde 2026-05-22 001822" src="https://github.com/user-attachments/assets/a0a35f42-7137-4389-85fc-5965c8b27d7c" />
+
+<img width="1347" height="241" alt="Skjermbilde 2026-05-22 001912" src="https://github.com/user-attachments/assets/e7a27cf1-9354-4b37-82ed-15cd18a947b2" />
+
+<img width="1255" height="413" alt="Skjermbilde 2026-05-22 002044" src="https://github.com/user-attachments/assets/618efadf-e67e-43e2-ae6d-b9217349300e" />
+
+
+<img width="1616" height="384" alt="Skjermbilde 2026-05-22 002306" src="https://github.com/user-attachments/assets/f7f68a91-6f0d-4392-89b5-9a82f4a0a318" />
+
+
+
+<img width="941" height="389" alt="image" src="https://github.com/user-attachments/assets/87f34209-5aae-4da9-a215-423d6b2f099b" />
+
+
+<img width="928" height="222" alt="image" src="https://github.com/user-attachments/assets/3f56fbc9-b64b-43d8-9fc1-fa80cbd935fb" />
+
+<img width="845" height="295" alt="image" src="https://github.com/user-attachments/assets/3a5db5d5-1b6a-43d8-a145-d174ed220e06" />
+
+
+<img width="1870" height="481" alt="image" src="https://github.com/user-attachments/assets/e8362759-3a62-4731-9b1c-214259293d26" />
+
+
+<img width="1743" height="272" alt="Skjermbilde 2026-05-22 005358" src="https://github.com/user-attachments/assets/5796a353-6ec6-4070-8b8b-61edbbe8010e" />
+
+
+
+
  
