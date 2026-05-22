@@ -23,10 +23,23 @@ Bruk cd for å gå til prosjektet.
 Eksempel:
 cd /mnt/c/Users/Mohammad1/Documents/plannlegging
  
+
+
+
+
+
+
 3. Lag virtual environment
 Et virtual environment gjør at pakkene installeres kun til prosjektet.
 
 python3 -m venv .venv
+
+
+
+
+
+
+
 
 4. Aktiver virtual environment
 
@@ -36,6 +49,12 @@ Vis det fungerer vil man se:
 
 (.venv)
 forna navnet i terminalen
+
+
+
+
+
+
 
 5. Installere Python-pakker
 bruk pip for å installere pakker
@@ -47,11 +66,21 @@ Installere mariadb
 
 pip install mariadb
 
+
+
+
+
 6. kontrollere at pakken fungerer
 man kan teste av å starte progrannet
 
+
+
+
+
 Eksempel:
 python3 app.py eller python3 db.py
+
+
 
 
 
