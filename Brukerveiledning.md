@@ -53,15 +53,24 @@ man kan teste av å starte progrannet
 Eksempel:
 python3 app.py eller python3 db.py
 
+
+
 7. Vanlige feil
 Feil: No module named flask
 Betyr at Flask ikke er installert.
+
+
+
 
 Løsning:
 pip install flask
 
 Feil: Port 5000 is in use
 Betyr at Flask allerede kjører.
+
+
+
+
 
 Løsning:
 trykk: CTRL + C
@@ -73,6 +82,9 @@ Betyr ofte at man er i feil mappe.
 
 Bruk: ls for å se filene i mappen
 
+
+
+
 8. Installere MariaDB-pakker i Linux/WSL
 
 Hvis man får feil som:
@@ -80,6 +92,11 @@ Hvis man får feil som:
 OSError: mariadb_config not found
 
 må man installere MariaDB development-pakker.
+
+
+
+
+
 
 Kjør:
 
@@ -101,6 +118,11 @@ hvordan lage virtual environment
 hvordan installere Python-pakker
 hvordan starte Python-programmer
 hvordan feilsøke vanlige problemer
+
+
+
+
+
 
 
 <img width="1156" height="299" alt="Skjermbilde 2026-05-22 001822" src="https://github.com/user-attachments/assets/a0a35f42-7137-4389-85fc-5965c8b27d7c" />
