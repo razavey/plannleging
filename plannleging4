@@ -1,0 +1,264 @@
+# VG2 IT Eksamen – Enkel Veiledning
+
+# 1. Åpne terminal
+
+pwd
+
+ls
+
+cd Documents
+
+# 2. Lage prosjektmappe
+
+mkdir prosjekt_vår_26
+
+cd prosjekt_vår_26
+
+pwd
+
+# 3. Lage virtual environment
+
+python3 -m venv .venv
+
+source .venv/bin/activate
+
+# Hvis det fungerer ser man:
+
+(.venv)
+
+# 4. Installere Flask og MariaDB-pakke
+
+pip install flask
+
+pip install mariadb
+
+# 5. Lage app.py
+
+nano app.py
+
+# Lim inn dette i app.py
+
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+
+def home():
+
+    return "hello world!"
+
+app.run(debug=True, host="0.0.0.0", port=5000)
+
+# Lagre:
+
+# CTRL + O
+
+# ENTER
+
+# CTRL + X
+
+# 6. Starte Flask
+
+python3 app.py
+
+# Hvis det fungerer:
+
+# Running on http://127.0.0.1:5000
+
+# Åpne nettleser:
+http://127.0.0.1:5000
+
+# Stoppe Flask:
+
+CTRL + C
+
+# 7. Lage HTML-side
+
+mkdir templates
+
+nano templates/index.html
+
+# Lim inn:
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard App</title>
+</head>
+<body>
+<h1>Dashboard App</h1>
+<p>Min første Flask-nettside</p>
+</body>
+</html>
+
+# Lagre:
+
+# CTRL + O
+
+# ENTER
+
+# CTRL + X
+
+# 8. Endre app.py
+
+nano app.py
+
+# Bytt til:
+
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route("/")
+
+def home():
+
+    return render_template("index.html")
+
+app.run(debug=True, host="0.0.0.0", port=5000)
+
+# Start Flask igjen
+
+python3 app.py
+
+# Åpne:
+http://127.0.0.1:5000
+
+# 9. Nettverk
+
+ping google.com
+
+# Stoppe ping:
+
+CTRL + C
+
+ip a
+
+# 10. Installere MariaDB
+
+sudo apt update
+
+sudo apt install mariadb-server
+
+# Sjekke status
+
+sudo systemctl status mariadb
+
+# Gå ut:
+
+q
+
+# 11. Starte MariaDB
+
+sudo mariadb
+
+# 12. SQL – Lage database
+
+CREATE DATABASE ummah;
+
+USE ummah;
+
+# 13. Lage tabell
+
+CREATE TABLE ummah (
+
+    id INT AUTO_INCREMENT PRIMARY KEY,
+
+    retning VARCHAR(50),
+
+    sekt VARCHAR(50)
+
+);
+
+# 14. Legge inn data
+
+INSERT INTO ummah (retning, sekt) VALUES ("shia", "jaffari"), ("sunni", "hanafi");
+
+# 15. Vise data
+
+SHOW TABLES;
+
+SELECT * FROM ummah;
+
+# 16. Oppdatere data
+
+UPDATE ummah
+
+SET sekt = "Twelver"
+
+WHERE id = 1;
+
+# 17. Slette data
+
+DELETE FROM ummah
+
+WHERE id = 2;
+
+# 18. Avslutte MariaDB
+
+exit;
+
+# 19. Viktige Linux-kommandoer
+
+pwd
+
+ls
+
+cd
+
+mkdir
+
+touch
+
+rm
+
+tree
+
+# 20. Viktige ting å kunne forklare
+
+- Hva Flask er
+
+- Hva localhost betyr
+
+- Hva IP-adresse er
+
+- Hva en database er
+
+- Hva SQL brukes til
+
+- Hva ping gjør
+
+- Hva virtual environment er
+
+- Hva Linux brukes til
+
+- Hva en server er
+
+# 21. Kompetanse jeg viser
+
+- Linux
+
+- Terminalbruk
+
+- Flask
+
+- Python
+
+- HTML
+
+- Nettverk
+
+- Ping/IP
+
+- MariaDB
+
+- SQL
+
+- Drift
+
+- Problemløsing
+
+- Dokumentasjon
+
+- Webutvikling
+ 
