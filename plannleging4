@@ -150,15 +150,22 @@ q
 
 # 11. Starte MariaDB
 
-sudo mariadb
+sudo mariadb -u root -p (U=Bruker, P=passord)
 
-# 12. SQL – Lage database
+
+# 12. SQL - Vise alle tidligere databaser
+
+Show databases;
+
+(Hvis ummah allerede finnes: Drop Databases ummah)
+
+# 13. SQL – Lage database
 
 CREATE DATABASE ummah;
 
 USE ummah;
 
-# 13. Lage tabell
+# 14. Lage tabell
 
 CREATE TABLE ummah (
 
@@ -170,17 +177,17 @@ CREATE TABLE ummah (
 
 );
 
-# 14. Legge inn data
+# 15. Legge inn data
 
 INSERT INTO ummah (retning, sekt) VALUES ("shia", "jaffari"), ("sunni", "hanafi");
 
-# 15. Vise data
+# 16. Vise data
 
 SHOW TABLES;
 
 SELECT * FROM ummah;
 
-# 16. Oppdatere data
+# 17. Oppdatere data
 
 UPDATE ummah
 
@@ -188,17 +195,17 @@ SET sekt = "Twelver"
 
 WHERE id = 1;
 
-# 17. Slette data
+# 18. Slette data
 
 DELETE FROM ummah
 
 WHERE id = 2;
 
-# 18. Avslutte MariaDB
+# 19. Avslutte MariaDB
 
 exit;
 
-# 19. Viktige Linux-kommandoer
+# 20. Viktige Linux-kommandoer
 
 pwd
 
@@ -214,7 +221,7 @@ rm
 
 tree
 
-# 20. Viktige ting å kunne forklare
+# 21. Viktige ting å kunne forklare
 
 - Hva Flask er
 
@@ -234,7 +241,7 @@ tree
 
 - Hva en server er
 
-# 21. Kompetanse jeg viser
+# 22. Kompetanse jeg viser
 
 - Linux
 
