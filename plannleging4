@@ -191,9 +191,10 @@ SELECT * FROM ummah;
 
 UPDATE ummah
 
-SET sekt = "Twelver"
+SET sekt = 'Twelver'
 
 WHERE id = 1;
+ 
 
 # 18. Slette data
 
