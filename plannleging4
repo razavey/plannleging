@@ -1,4 +1,4 @@
-# VG2 IT Eksamen – Enkel Veiledning
+# VG2 IT Eksamen – Enkel Veiledning           
 
 # 1. Åpne terminal
 
@@ -157,7 +157,7 @@ sudo mariadb -u root -p (U=Bruker, P=passord)
 
 Show databases;
 
-(Hvis ummah allerede finnes: Drop Databases ummah)
+(Hvis ummah allerede finnes: DROP DATABASE ummah;)
 
 # 13. SQL – Lage database
 
@@ -269,4 +269,181 @@ tree
 - Dokumentasjon
 
 - Webutvikling
+
+
+
+FORKLARING AV KOMMANDOER
+
+pwd
+
+Viser hvilken mappe jeg står i.
+
+ls
+
+Viser filer og mapper i den aktuelle mappen.
+
+cd
+
+Brukes til å gå inn i en annen mappe.
+
+mkdir
+
+Lager en ny mappe.
+
+touch
+
+Lager en ny fil.
+
+rm
+
+Sletter en fil.
+
+tree
+
+Viser hele mappestrukturen.
+
+python3 -m venv .venv
+
+Oppretter et virtual environment for Python.
+
+source .venv/bin/activate
+
+Aktiverer virtual environment.
+
+pip install flask
+
+Installerer Flask-biblioteket.
+
+pip install mariadb
+
+Installerer MariaDB-biblioteket til Python.
+
+python3 app.py
+
+Starter Flask-applikasjonen.
+
+ping google.com
+
+Tester nettverkstilkoblingen.
+
+ip a
+
+Viser IP-adressen til maskinen.
+
+sudo apt update
+
+Oppdaterer pakkelisten i Linux.
+
+sudo apt install mariadb-server
+
+Installerer MariaDB-databasen.
+
+sudo systemctl status mariadb
+
+Viser status på MariaDB-tjenesten.
+
+sudo mariadb -u root -p
+
+Logger inn i MariaDB som root-bruker.
+
+SHOW DATABASES;
+
+Viser alle databaser.
+
+CREATE DATABASE ummah;
+
+Oppretter databasen ummah.
+
+USE ummah;
+
+Velger databasen ummah.
+
+CREATE TABLE ummah (...);
+
+Oppretter en tabell.
+
+INSERT INTO ummah (...);
+
+Legger inn data i tabellen.
+
+SELECT * FROM ummah;
+
+Viser alle data i tabellen.
+
+UPDATE ummah SET ...;
+
+Oppdaterer eksisterende data.
+
+DELETE FROM ummah WHERE ...;
+
+Sletter data fra tabellen.
+
+DROP DATABASE ummah;
+
+Sletter hele databasen.
+
+from flask import Flask
+
+Importerer Flask-biblioteket.
+
+app = Flask(__name__)
+
+Oppretter Flask-applikasjonen.
+
+@app.route("/")
+
+Oppretter startsiden til nettsiden.
+
+def home():
+
+Oppretter en funksjon som kjører når brukeren åpner nettsiden.
+
+return "hello world!"
+
+Sender tekst til nettleseren.
+
+render_template("index.html")
+
+Viser HTML-filen index.html.
+
+app.run(debug=True, host="0.0.0.0", port=5000)
+
+Starter Flask-serveren på port 5000.
+
+Flask
+
+Et Python-rammeverk for å lage nettsider og webapplikasjoner.
+
+localhost
+
+Betyr den lokale datamaskinen.
+
+IP-adresse
+
+En unik adresse som identifiserer en enhet på nettverket.
+
+Database
+
+Et system for lagring og organisering av data.
+
+SQL
+
+Språket som brukes til å administrere databaser.
+
+Ping
+
+Et verktøy som tester nettverkstilkoblingen.
+
+Virtual Environment
+
+Et isolert Python-miljø for prosjektet.
+
+Linux
+
+Et operativsystem som ofte brukes på servere og Raspberry Pi.
+
+Server
+
+En datamaskin eller tjeneste som leverer data til andre enheter på nettverket.
+ 
  
