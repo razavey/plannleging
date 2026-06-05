@@ -445,5 +445,12 @@ Et operativsystem som ofte brukes på servere og Raspberry Pi.
 Server
 
 En datamaskin eller tjeneste som leverer data til andre enheter på nettverket.
+
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Hei {{ navn }}!</h1>
+</body>
+</html>
  
  
